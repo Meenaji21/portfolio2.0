@@ -12,6 +12,11 @@ body {
 .hamburger{
     /* display: block; */
     cursor: pointer;
+    background-color: aqua;
+    max-width: fit-content;
+    border-radius: 1rem;
+    margin: 9px;
+    padding: 2px;
 }
 .top, .mid, .bottom{
     width: 35px;
