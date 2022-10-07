@@ -9,7 +9,7 @@ body {
 
 /* ////// hambuger icon ///// */
 
-.hamburger{
+.hamburger {
     /* display: block; */
     cursor: pointer;
     background-color: aqua;
@@ -18,68 +18,109 @@ body {
     margin: 9px;
     padding: 2px;
 }
-.top, .mid, .bottom{
+
+.top,
+.mid,
+.bottom {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 6px;
     transition: 0.4s;
 }
+
 /* rotate top bar///// */
-.change .top{
+.change .top {
     transform: translate(0, 11px) rotate(-45deg);
 }
+
 /* fade out mid bar/// */
-.change .mid{
+.change .mid {
     opacity: 0;
 }
+
 /* rotate bottom bar/// */
-.change .bottom{
+.change .bottom {
     transform: translate(0, -11px) rotate(45deg);
 }
+
 /* /////hamburger icon code end/// */
 
 /* ///////sidebar code ////// */
-.sidebar{
+.sidebar {
     display: none;
     width: 15%;
     background-color: blanchedalmond;
 }
-.open{
+
+.open {
     display: inline-block;
 }
-.sidebar ul{
+
+.sidebar ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.sidebar ul li{
+
+.sidebar ul li {
     text-align: center;
     font-size: 1.5rem;
 }
-.sidebar ul li a{
+
+.sidebar ul li a {
     text-decoration: none;
     color: #333;
 }
-.sidebar ul li a:hover{
+
+.sidebar ul li a:hover {
     padding-left: 1rem;
     font-size: 1.4rem;
 }
+
 /* //// sidebar code end////// */
-.intro{
+.intro {
     display: flex;
-    
+
 }
-.profile{
+
+.profile {
     border: 2px solid red;
-    width: 80%;
+    width: 60%;
+    padding: 180px 131px;
+    font-size: 1.5rem;
 }
-.profilepic{
+.btn{
+    margin-top: 22px;
+}
+.btn a {
+    margin: 20px 3px;
+    padding: 8px 12px;
+    background-color: #89CFF0;
+    color: #00A36C;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #00A36C;
+}
+.btn a:hover{
+    font-size: 1.4rem;
+    color: #89CFF0;
+    background-color: #00A36C;
+}
+
+.profilepic {
     border: 2px solid black;
-    width: 20%;
-    background-color: #40E0D0;
+    width: 30%;
+    /* background-color: #DAF7A6; */
+    text-align: center;
 }
-.profilepic img{
-    width: 180px;
+
+.profilepic img {
+    width: 40vh;
+    height: 80vh;
 }
