@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(255, 234, 234);
+    background-color: #FFF5EE;
 }
 
 /* ////// hambuger icon ///// */
@@ -42,7 +42,6 @@ body {
 /* ///////sidebar code ////// */
 .sidebar{
     display: none;
-    border: 5px solid red;
     width: 15%;
     background-color: blanchedalmond;
 }
@@ -66,4 +65,21 @@ body {
 .sidebar ul li a:hover{
     padding-left: 1rem;
     font-size: 1.4rem;
+}
+/* //// sidebar code end////// */
+.intro{
+    display: flex;
+    
+}
+.profile{
+    border: 2px solid red;
+    width: 80%;
+}
+.profilepic{
+    border: 2px solid black;
+    width: 20%;
+    background-color: #40E0D0;
+}
+.profilepic img{
+    width: 180px;
 }
