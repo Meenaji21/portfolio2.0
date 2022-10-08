@@ -17,6 +17,7 @@ body {
     border-radius: 1rem;
     margin: 9px;
     padding: 2px;
+    position: absolute;
 }
 
 .top,
@@ -49,8 +50,10 @@ body {
 /* ///////sidebar code ////// */
 .sidebar {
     display: none;
+    position: fixed;
     width: 15%;
     background-color: blanchedalmond;
+    margin: 50px 69px;
 }
 
 .open {
@@ -67,11 +70,13 @@ body {
 .sidebar ul li {
     text-align: center;
     font-size: 1.5rem;
+    padding: 10px;
 }
 
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
+    
 }
 
 .sidebar ul li a:hover {
@@ -80,6 +85,8 @@ body {
 }
 
 /* //// sidebar code end////// */
+
+/* /////// intro css ////// */
 .intro {
     display: flex;
 
@@ -124,3 +131,6 @@ body {
     width: 40vh;
     height: 80vh;
 }
+/* ////////intro css end ///////////// */
+
+/* ///////////services css/////////// */
