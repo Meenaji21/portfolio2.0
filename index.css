@@ -158,8 +158,16 @@ body {
     border: 2px solid black;
     font-size: 1rem;
     color: #222;
-    margin: 3vw 9vw 0vw;
+    margin: 90px 90px;
+    cursor: pointer;
+    padding: 33px 33px;
 }
 .s1 p{
     color: #777;
+}
+.s1 img{
+    width: 40px;
+}
+.s1:hover{
+    color: #00A36C;
 }
