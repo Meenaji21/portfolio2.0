@@ -11,17 +11,18 @@ body {
 
 /* ///////sidebar code ////// */
 .sidebar{
+    /* display: none; */
     background: linear-gradient(to right, #6eff2bc2, #19d0dd);
     opacity: 0.9;
     position: fixed;
     z-index: 1111;
     width: 100%;
-    padding: 0px 50px 0px 90px;
+    padding: 20px 50px 0px 50px;
     height: 100px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .sidebar ul {
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 500;
     display: flex;
     max-width: 100%;
@@ -36,17 +37,18 @@ body {
     text-decoration: none;
 }
 
+
 /* //// sidebar code end////// */
 
 /* /////// intro css ////// */
 .intro {
     display: flex;
-
+    max-width: 100%;
 }
 
 .profile {
     border: 2px solid red;
-    width: 60%;
+    max-width: 100%;
     padding: 180px 131px;
     font-size: 1.5rem;
 }
@@ -67,7 +69,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     box-shadow: 5px 5px 5px #00A36C;
 }
 .btn a:hover{
@@ -76,25 +78,15 @@ body {
     background-color: #00A36C;
 }
 
-.profilepic {
-    border: 2px solid black;
-    width: 40%;
-    /* background-color: #DAF7A6; */
-    text-align: center;
-}
-
-.profilepic img {
-    width: 40vh;
-    height: 80vh;
-}
 /* ////////intro css end ///////////// */
 
 /* ///////////services css/////////// */
 .servicedetails{
-    display: block;
+    /* display: block; */
     border: 2px solid blue;
     text-align: center;
     max-width: 100%;
+    box-sizing: border-box;
 }
 .servicesheading{
     font-size: 1.2rem;
@@ -105,6 +97,10 @@ body {
 }
 .services{
     display: flex;
+    /* box-sizing: border-box; */
+}
+.icon{
+    font-size: 2.5rem;
 }
 .s1{
     border: 2px solid black;
