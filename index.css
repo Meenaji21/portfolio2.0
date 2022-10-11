@@ -28,6 +28,15 @@
     text-decoration: none;
 }
 
+.menuicon:hover,.menubar ul li a:hover{
+    color: rgb(248, 231, 210);
+    font-size: 1.4rem;
+}
+
+.menuicon{
+    font-size: 2rem;
+}
+
 /* menubar css end ///// */
 
 /* profilecontainer////// */
@@ -93,7 +102,7 @@
     background: linear-gradient(to left, rgba(20, 104, 182, 0.733), rgba(141, 155, 11, 0.795));
 }
 
-/* profilecontainer/////// */
+/* profilecontainer css end/////// */
 
 .serviceheading{
     border: 5px solid red;
@@ -148,8 +157,18 @@
 .icon{
     font-size: 3.2rem;
 }
-/* servicesontainer//////////// */
+/* servicesontainer css end//////////// */
+
+/* projectcontainer css/////// */
+
+
+
+/* projectcontainer css end///// */
+
+/* footer css///// */
 
 footer{
     border: 5px solid rgb(60, 255, 0);
 }
+
+/* footer css end///// */
