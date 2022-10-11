@@ -20,7 +20,8 @@
 }
 
 .menubar ul li{
-    padding: 22px 22px ;
+    margin-top: 20px;
+    padding: 20px 20px ;
 }
 
 .menubar ul li a{
@@ -39,7 +40,7 @@
 .profile{
     border: 5px solid rgb(0, 0, 0);
     font-size: 1.3rem;
-    padding: 5rem 3rem;
+    padding: 9rem 6rem;
 }
 
 .profilepic{
@@ -96,12 +97,27 @@
 
 .serviceheading{
     border: 5px solid red;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #222;
+    padding: .5rem 0;
+}
+
+.serviceheading p{
+    border: 2px solid black;
+    margin: .5rem 5rem;
+    padding: 0 9rem;
+    color: #777;
+
 }
 
 /* servicesontainer///////////// */
 
 .servicesontainer{
     border: 5px solid rgb(3, 226, 241);
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
     
 }
 
