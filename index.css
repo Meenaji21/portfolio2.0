@@ -1,121 +1,111 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
-body {
-    background-color: #f5f5f5;
+.menubar{
+    border: 5px solid red;
+    background: linear-gradient(to left, rgba(141, 155, 11, 0.795), rgba(20, 104, 182, 0.733));
+    height: 150px;
 }
 
-
-
-/* ///////sidebar code ////// */
-.sidebar{
-    /* display: none; */
-    background: linear-gradient(to right, #6eff2bc2, #19d0dd);
-    opacity: 0.9;
-    position: fixed;
-    z-index: 1111;
-    width: 100%;
-    padding: 20px 50px 0px 50px;
-    height: 100px;
-    /* border: 2px solid red; */
-}
-.sidebar ul {
-    font-size: 30px;
-    font-weight: 500;
-    display: flex;
-    max-width: 100%;
+.menubar ul{
     list-style: none;
+    font-size: 1.8rem;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.sidebar ul li{
-    margin: 0 16px;
+
+.menubar ul li{
+    padding: 22px 22px ;
 }
-.sidebar ul li a{
+
+.menubar ul li a{
     text-decoration: none;
 }
 
+/* menubar css end ///// */
 
-/* //// sidebar code end////// */
+/* profilecontainer////// */
 
-/* /////// intro css ////// */
-.intro {
+.profilecontainer{
+    border: 5px  solid blue;
     display: flex;
-    max-width: 100%;
 }
 
-.profile {
-    border: 2px solid red;
-    max-width: 100%;
-    padding: 180px 131px;
-    font-size: 1.5rem;
+.profile{
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 1.3rem;
+    padding: 5rem 3rem;
 }
+
+.profilepic{
+    border: 5px solid rgb(0, 252, 21);
+}
+
+.profilepic img{
+    width: 25vw;
+    height: 66vh;
+}
+
+@media only screen and (max-width: 570px){
+    .profilecontainer{
+        flex-direction: column-reverse;
+    }
+    .profilepic{
+        text-align: center;
+    }
+    .profilepic img{
+        
+        width: 33vw;
+        height: 22vh;
+    }
+}
+
 .btn{
-    /* border: 2px soild blue; */
     margin-top: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btn a {
+
+.btn a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(248, 231, 210);
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
     margin: 0px 9px;
     padding: 8px 12px;
-    background-color: #89CFF0;
-    color: #00A36C;
-    font-weight: bold;
-    font-size: 1.3rem;
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
+    background: linear-gradient(to left, rgba(141, 155, 11, 0.795), rgba(20, 104, 182, 0.733));
+    border-radius: 2rem;
     box-sizing: border-box;
-    box-shadow: 5px 5px 5px #00A36C;
-}
-.btn a:hover{
-    font-size: 1.4rem;
-    color: #89CFF0;
-    background-color: #00A36C;
+    box-shadow: 5px 5px 5px;
 }
 
-/* ////////intro css end ///////////// */
+/* profilecontainer/////// */
 
-/* ///////////services css/////////// */
-.servicedetails{
-    /* display: block; */
-    border: 2px solid blue;
-    text-align: center;
-    max-width: 100%;
-    box-sizing: border-box;
+.serviceheading{
+    border: 5px solid red;
 }
-.servicesheading{
-    font-size: 1.2rem;
-    color: #222;
+
+/* servicesontainer///////////// */
+
+.servicesontainer{
+    border: 5px solid rgb(3, 226, 241);
+    
 }
-.servicesheading p{
-    color: #777;
-}
-.services{
-    display: flex;
-    /* box-sizing: border-box; */
-}
-.icon{
-    font-size: 2.5rem;
-}
+
 .s1{
-    border: 2px solid black;
-    font-size: 1rem;
-    color: #222;
-    margin: 90px 90px;
-    cursor: pointer;
-    padding: 33px 33px;
+    border: 5px solid red;
 }
-.s1 p{
-    color: #777;
-}
-.s1 img{
-    width: 40px;
-}
-.s1:hover{
-    color: #00A36C;
+
+/* servicesontainer//////////// */
+
+footer{
+    border: 5px solid rgb(60, 255, 0);
 }
