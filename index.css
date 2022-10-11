@@ -105,8 +105,8 @@
 
 .serviceheading p{
     border: 2px solid black;
-    margin: .5rem 5rem;
-    padding: 0 9rem;
+    margin: .5rem 10rem;
+    padding: 0 10rem;
     color: #777;
 
 }
@@ -118,13 +118,36 @@
     display: flex;
     margin: 1rem;
     padding: 1rem;
-    
 }
 
 .s1{
     border: 5px solid red;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #222;
+    margin: 1rem 1rem;
+    padding: 0 1rem;
 }
 
+@media only screen and (max-width: 570px){
+    .serviceheading p{
+        margin: 1rem 2rem;
+        padding: 1rem 2rem;
+
+    }
+    .servicesontainer{
+        flex-direction: column;
+    }
+}
+
+.s1 p{
+    color: #777;
+
+}
+
+.icon{
+    font-size: 3.2rem;
+}
 /* servicesontainer//////////// */
 
 footer{
