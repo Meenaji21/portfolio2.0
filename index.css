@@ -6,7 +6,7 @@
 }
 
 .menubar{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     background: linear-gradient(to left, rgba(141, 155, 11, 0.795), rgba(20, 104, 182, 0.733));
     height: 150px;
 }
@@ -42,18 +42,19 @@
 /* profilecontainer////// */
 
 .profilecontainer{
-    border: 5px  solid blue;
+    /* border: 5px  solid blue; */
     display: flex;
 }
 
 .profile{
-    border: 5px solid rgb(0, 0, 0);
+    /* border: 5px solid rgb(0, 0, 0);  */
     font-size: 1.3rem;
     padding: 9rem 6rem;
 }
 
 .profilepic{
-    border: 5px solid rgb(0, 252, 21);
+    /* border: 5px solid rgb(0, 252, 21); */
+    margin: 30px 0 0;
 }
 
 .profilepic img{
@@ -109,11 +110,12 @@
     text-align: center;
     font-size: 1.2rem;
     color: #222;
-    padding: .5rem 0;
+    padding: 120px 0 0;
+    margin-top: 2rem;
 }
 
 .serviceheading p{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: .5rem 10rem;
     padding: 0 10rem;
     color: #777;
@@ -125,12 +127,12 @@
 .servicesontainer{
     border: 5px solid rgb(3, 226, 241);
     display: flex;
-    margin: 1rem;
-    padding: 1rem;
+    margin: rem 1rem 0;
+    padding: 100px 0;
 }
 
 .s1{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     text-align: center;
     font-size: 1.2rem;
     color: #222;
@@ -168,20 +170,57 @@
 /* footer css///// */
 
 footer{
-    border: 5px solid rgb(60, 255, 0);
+    /* border: 5px solid rgb(60, 255, 0); */
     background: #04091e;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 120px 0;
 }
 
 .about{
-    border: 2px solid wheat;
+    /* border: 2px solid wheat; */
+    padding: 0 15px;
+}
+
+.update{
+    /* border: 2px solid green; */
+    padding: 0 15px;
+}
+
+.ip{
+    display: flex;
+}
+
+.ip input{
+    background: #f9f9f9;
+    padding: 6px 12px 6px 20px;
+    border: none;
+}
+
+.ip button{
+    background: #8490ff;
+    padding: 6px 12px;
+    border: 1px solid transparent;
 }
 
 .link{
-    border: 2px solid rgb(240, 201, 201) ;
+    /* border: 2px solid rgb(240, 201, 201) ; */
+    padding: 0 15px;
+}
+
+.footerh3{
+    margin: 0 0 15px;
+}
+
+.footerp{
+    margin: 0 0 10px;
+    color: #777;
+}
+
+.ficon{
+    font-size: 1.6rem;
 }
 
 /* footer css end///// */
