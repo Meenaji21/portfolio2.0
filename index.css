@@ -169,6 +169,19 @@
 
 footer{
     border: 5px solid rgb(60, 255, 0);
+    background: #04091e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    border: 2px solid wheat;
+}
+
+.link{
+    border: 2px solid rgb(240, 201, 201) ;
 }
 
 /* footer css end///// */
