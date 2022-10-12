@@ -5,6 +5,10 @@
 
 }
 
+body{
+    background: #f9f9f9;
+}
+
 .menubar {
     /* border: 5px solid red; */
     position: fixed;
@@ -134,11 +138,11 @@
 @media only screen and (max-width: 570px) {
     .profilecontainer {
         flex-direction: column;
-        margin-top: 0;
-
+        margin-top: 0rem;
     }
 
     .profile {
+        margin-top: 3.5rem;
         padding: 4em 2em;
     }
 
