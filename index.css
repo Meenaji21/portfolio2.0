@@ -69,6 +69,7 @@
         width: fit-content;
         background: linear-gradient(to left, rgba(141, 155, 11, 0.795), rgba(20, 104, 182, 0.733));
         border-radius: .6rem;
+        margin: 9px 6px;
     }
 
     .bar1,.bar2,.bar3 {
