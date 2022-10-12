@@ -1,17 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-.menubar{
+.menubar {
     /* border: 5px solid red; */
+    position: fixed;
     background: linear-gradient(to left, rgba(141, 155, 11, 0.795), rgba(20, 104, 182, 0.733));
-    height: 150px;
+    height: 120px;
+    width: 100%;
 }
 
-.menubar ul{
+.menubar ul {
     list-style: none;
     font-size: 1.8rem;
     display: flex;
@@ -19,71 +21,145 @@
     justify-content: center;
 }
 
-.menubar ul li{
-    margin-top: 20px;
-    padding: 20px 20px ;
+.menubar ul li {
+    margin: 20px 20px;
+    /* padding: 20px ; */
 }
 
-.menubar ul li a{
+.menubar ul li a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-.menuicon:hover,.menubar ul li a:hover{
-    color: rgb(248, 231, 210);
+.menuicon:hover,
+.menubar ul li a:hover {
     font-size: 1.4rem;
 }
 
-.menuicon{
+.menuicon {
     font-size: 2rem;
 }
 
 /* menubar css end ///// */
 
+@media only screen and (max-width:570px) {
+
+    .menubar{
+        margin: 35px 65px;
+        display: none;
+        width: 60%;
+        height: auto;
+        position: fixed;
+    }
+
+    .menubar ul{
+        flex-direction: column;
+    }
+
+    .menubar ul li{
+        margin: 10px 10px;
+
+    }
+
+    .hamburger{
+        display: inline-block;
+        position: fixed;
+        cursor: pointer;
+        /* border: 2px  solid red; */
+        width: fit-content;
+        background: linear-gradient(to left, rgba(141, 155, 11, 0.795), rgba(20, 104, 182, 0.733));
+        border-radius: .6rem;
+    }
+
+    .bar1,.bar2,.bar3 {
+        border-radius: .5rem;
+        width: 45px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 8px 8px;
+        transition: 0.4s;
+    }
+
+    /* Rotate first bar */
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-50deg);
+    }
+
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(50deg);
+    }
+
+    .close{
+        display: block;
+    }
+}
+
 /* profilecontainer////// */
 
-.profilecontainer{
-    /* border: 5px  solid blue; */
+.profilecontainer {
+    /* border: 5px solid blue; */
     display: flex;
+    width: 100%;
+    margin-top: 8rem;
 }
 
-.profile{
-    /* border: 5px solid rgb(0, 0, 0);  */
+.profile {
+    /* border: 5px solid rgb(0, 0, 0); */
     font-size: 1.3rem;
     padding: 9rem 6rem;
+    color: #222;
 }
 
-.profilepic{
+.profile p{
+    color: #777;
+}
+
+.profilepic {
     /* border: 5px solid rgb(0, 252, 21); */
     margin: 30px 0 0;
 }
 
-.profilepic img{
+.profilepic img {
     width: 25vw;
     height: 66vh;
 }
 
-@media only screen and (max-width: 570px){
-    .profilecontainer{
-        flex-direction: column-reverse;
+@media only screen and (max-width: 570px) {
+    .profilecontainer {
+        flex-direction: column;
+        margin-top: 0;
+
     }
-    .profilepic{
+
+    .profile {
+        padding: 4em 2em;
+    }
+
+    .profilepic {
+        margin-top: 0;
         text-align: center;
     }
-    .profilepic img{
-        
-        width: 33vw;
-        height: 22vh;
+
+    .profilepic img {
+        width: 53vw;
+        height: 32vh;
     }
 }
 
-.btn{
+.btn {
     margin-top: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn a{
+.btn a {
     text-align: center;
     text-decoration: none;
     color: rgb(248, 231, 210);
@@ -98,15 +174,16 @@
     box-shadow: 5px 5px 5px;
 }
 
-.btn a:hover{
+.btn a:hover {
     font-size: 1.5rem;
     background: linear-gradient(to left, rgba(20, 104, 182, 0.733), rgba(141, 155, 11, 0.795));
 }
 
 /* profilecontainer css end/////// */
 
-.serviceheading{
-    border: 5px solid red;
+.serviceheading {
+    width: 100%;
+    /* border: 5px solid red; */
     text-align: center;
     font-size: 1.2rem;
     color: #222;
@@ -114,7 +191,7 @@
     margin-top: 2rem;
 }
 
-.serviceheading p{
+.serviceheading p {
     /* border: 2px solid black; */
     margin: .5rem 10rem;
     padding: 0 10rem;
@@ -124,14 +201,15 @@
 
 /* servicesontainer///////////// */
 
-.servicesontainer{
-    border: 5px solid rgb(3, 226, 241);
+.servicesontainer {
+    width: 100%;
+    /* border: 5px solid rgb(3, 226, 241); */
     display: flex;
     margin: rem 1rem 0;
     padding: 100px 0;
 }
 
-.s1{
+.s1 {
     /* border: 5px solid red; */
     text-align: center;
     font-size: 1.2rem;
@@ -140,25 +218,27 @@
     padding: 0 1rem;
 }
 
-@media only screen and (max-width: 570px){
-    .serviceheading p{
-        margin: 1rem 2rem;
-        padding: 1rem 2rem;
+@media only screen and (max-width: 570px) {
+    .serviceheading p {
+        margin: 1rem 1rem;
+        padding: 0rem 1rem;
 
     }
-    .servicesontainer{
+
+    .servicesontainer {
         flex-direction: column;
     }
 }
 
-.s1 p{
+.s1 p {
     color: #777;
 
 }
 
-.icon{
+.icon {
     font-size: 3.2rem;
 }
+
 /* servicesontainer css end//////////// */
 
 /* projectcontainer css/////// */
@@ -169,7 +249,8 @@
 
 /* footer css///// */
 
-footer{
+footer {
+    width: 100%;
     /* border: 5px solid rgb(60, 255, 0); */
     background: #04091e;
     color: #ffffff;
@@ -177,50 +258,62 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 120px 0;
+    font-size: 1.1rem;
 }
 
-.about{
+.about {
     /* border: 2px solid wheat; */
     padding: 0 15px;
 }
 
-.update{
+.update {
     /* border: 2px solid green; */
     padding: 0 15px;
+    margin: 0 0 15px;
 }
 
-.ip{
+.ip {
     display: flex;
 }
 
-.ip input{
+.ip input {
     background: #f9f9f9;
     padding: 6px 12px 6px 20px;
     border: none;
 }
 
-.ip button{
+.ip button {
     background: #8490ff;
     padding: 6px 12px;
     border: 1px solid transparent;
 }
 
-.link{
+.link {
     /* border: 2px solid rgb(240, 201, 201) ; */
     padding: 0 15px;
 }
 
-.footerh3{
+.footerh3 {
     margin: 0 0 15px;
 }
 
-.footerp{
+.footerp {
     margin: 0 0 10px;
     color: #777;
 }
 
-.ficon{
+.ficon {
     font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 570px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .Follow {
+        text-align: center;
+    }
 }
 
 /* footer css end///// */
